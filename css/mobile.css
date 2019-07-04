@@ -1,0 +1,305 @@
+/* часть 1 */
+* {
+  color: #555
+} 
+h1{
+  font-size: 1.5em
+}
+h2,h3,h4,h5,h6{
+  color: #333
+}
+header{
+  background: #243360
+}
+nav a{
+  color: #fff;
+}
+.logo{
+  color: #fff
+}
+.logo > span, a{
+  color: #d65f04
+}
+#banner{
+  background: #243360;  
+}
+#banner * {
+  color: #fff
+}
+.download{
+  background: rgb(67, 186, 63);
+}
+
+/* часть 2*/
+* {
+  font-family: Arial, sans-serif;
+  /*font-family: 'Lobster', cursive;*/
+}
+.logo{
+  text-decoration: none
+}
+nav a:link   { color: #d65f04 }
+nav a:visited{ color: #f98f37 }
+nav a:active { color: #d6ac04 }
+nav a{
+  text-decoration: none
+}
+nav a:hover{ 
+  color:#d6ac04;
+  background: #5a73bc;
+  text-decoration: underline
+}
+#catalog h3::first-letter{
+  font-size: 3rem;
+  color: #aaa
+}
+#promotion h3{
+  font-weight: 100;
+  font-style: italic;
+  font-variant: small-caps
+}
+#banner h1, .lead, h2{
+  text-align: center
+}
+h1{
+  text-shadow: 2px 1px 10px 
+}
+#banner blockquote{
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+/* часть 3 */
+#banner{
+  /*background-image: url(../img/background.jpg);*/
+}
+
+#reviews,#banner{
+  background-color: #243360;
+}
+#reviews * {
+  color: #fff
+}
+
+#reviews figure, 
+#reviews p
+{
+  text-align:center
+}
+
+#reviews img{
+  width: 100px;
+  border: 5px solid #fff;
+  border-radius: 100px;
+  opacity: 0.5
+}
+#reviews img:hover{
+  /*width: 200px;*/
+  opacity: 1
+}
+
+/*Работа с меню*/
+header ul{
+  list-style-type: none;
+}
+header li{
+  display: inline-block;
+}
+
+
+/*Работа стаблицей*/
+#catalog{
+  text-align: center
+}
+#catalog img{
+  width: 50px
+}
+#catalog table{
+  border-collapse: collapse
+}
+#catalog td{
+  border: 1px solid #eee;
+  padding: 5px
+}
+
+/*айфрейм*/
+#contacts iframe{
+    display: block;
+    margin: auto;
+}
+
+/*border: 1px solid red */
+
+#contacts .row:nth-child(4) *{
+    vertical-align: top;
+}
+
+#contacts label{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
+
+#contacts input,
+#contacts textarea{
+    width: 300px; 
+}
+
+#contacts .row:nth-child(5) input,
+#contacts .row:nth-child(6) input{
+    width: auto;
+}
+#contacts textarea{
+    height: 150px;
+}
+
+/* макет */
+nav a{
+    padding: 5px 10px;
+}
+
+.container{
+    width: 992px;
+    margin: auto;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+header, #banner{
+    margin: 0;
+}
+
+#banner {
+    margin-top: -18px;
+}
+
+.download{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px #000;
+    display: block;
+    width: 140px;
+    margin: auto;
+}
+
+/*колонки diplay:table, т.е. делаем их в виде таблицы*/
+#about .cols{
+    display: table;
+}
+
+#about .col{
+    display: table-cell;/*делаем их в виде ячейки таблицы*/
+    width: 25%;
+}
+
+/*колонки inline:block, т.е. делаем их блочно-строчными*/
+#promotion .items{
+    font-size: 0;/*Т.к. между элементами div пробелы, которые считаются как 1 символ, то мы делаем размер шрифта этого символа 0, чтобы у нас все элементы влезли*/
+    text-align: center; /*выравниваем по центру, даже если будет 5 элементов, то все равно встанут красиво*/
+}
+
+#promotion .item{
+    vertical-align: top;
+    font-size: 1rem; /*возвращаем размер шрифта*/
+    width: 33%;/*делим 100% на количество элементов*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/*делаем ширину параграфа такую же, как у картинки, сначала смотрим ширину картинки*/
+#promotion .item p{
+    width: 230px;
+    margin: auto;
+    text-align: justify; /*выравнивание по ширине*/
+}
+
+/*Внутренние стили для печати*/
+@media print {
+    * {
+        color: #333 !important; /*Делаем стиль для шрифта по всей странице самым главным*/
+        background: #fff !important;
+    }
+    
+    .form{
+        display: none; /*Отключаем отображение формы*/
+    }
+    
+    iframe{
+        width: 100% !important;/*Увеличиваем размер фрейма, чтобы карта была больше и делаем у правила максимальный приоритет*/
+    }
+    
+    a::after{
+        content: " (" attr(href) ")"; /*Добавляем отображение пути ссылок и скобки сначала и в конце пути*/
+    }
+    
+    h2{
+        page-break-before: always; /*Размещаем все наши разделы, которые начинаются с h2 на разных страницах, т.е. перед тегом h2 будет разрыв страницы*/
+    }
+}
+
+/* Мобильная версия */
+header {
+    text-align: 
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+nav ul, nav li{
+    padding: 0;
+    margin: 0;
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container{
+    width: 500px;
+}
+
+#catalog td{
+    display: block;
+}
+
+#promotion .item,
+#promotion .items p
+{
+    display: block;
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+#contacts label,
+#contacts input,
+#contacts textarea
+{
+    width: 100%;
+}
+
+#contacts input, #contacts texarea{
+    font-size: 2rem;
+    padding: 5px;
+}
+
+/* Как создать красивые чекбоксы и радиокнопки https://www.youtube.com/watch?v=*/
+
+#about .cols,#about .col{
+    display: block;
+    width: 100%;
+}
+
+
+
