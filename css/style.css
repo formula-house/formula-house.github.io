@@ -213,3 +213,57 @@ h2{
     text-align: center;
 }
 
+/*Ссылка все предложения*/
+.objects {
+    text-align: center;
+   font-size: 20px;
+    margin-top: 2px;
+}
+
+td{
+ padding: 5px;
+vertical-align: top;
+}
+
+h1,footer{
+    text-align: center;
+}
+
+/*Контакты*/
+/*#contact p{
+color: red;    
+}
+*/
+
+#contact td{
+padding: 15px;
+}
+
+#slogan{
+    color: red;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.help{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#slogan2{
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Ячейки таблицы с картинкой
+#about td{
+    border: 2px solid red;
+}
+*/
+
+/*Двигаем картинку в ячейке о нас*/
+td #about-image{
+    text-align: center;
+}
