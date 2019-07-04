@@ -264,6 +264,49 @@ padding: 15px;
 */
 
 /*Двигаем картинку в ячейке о нас*/
-td #about-image{
-    text-align: center;
+
+
+
+
+/*Верстаем страницу catalog*/
+#catalog-page table {
+    width: 1000px;
+    }
+
+#catalog-page td {
+    border: 1px solid gray;
 }
+
+#catalog-page tr td:first-child {
+    text-align: center;
+    width: 10px;
+}
+
+#catalog-page img{
+    height: 300px;
+}
+
+#catalog-page h3{
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+/*Страница о нас*/
+#about #about-box{
+    background: url(about.png);
+    width: 100%;
+    border: 2px solid green;
+    height: 320px;
+}
+
+#about #about-box p{
+    width: 40%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+/*
+#about td{
+    border: 2px solid red;
+}
+*/
