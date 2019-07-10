@@ -1,7 +1,8 @@
 /* часть 1 */
-* {
+/*Фон всей страницы*/
+/* {
   color: #555
-} 
+}*/
 h1{
     font-size: 1.5em;
     text-shadow: 2px 1px 10px;
@@ -107,7 +108,7 @@ header li{
 
 
 /*border: 1px solid red */
-
+/*
 #contacts .row:nth-child(4) *{
     vertical-align: top;
 }
@@ -130,7 +131,7 @@ header li{
 #contacts textarea{
     height: 150px;
 }
-
+*/
 /* макет */
 nav a{
     padding: 5px 10px;
@@ -158,6 +159,10 @@ header, #banner{
 }
 
 /*колонки inline:block, т.е. делаем их блочно-строчными*/
+/*Фон блока каталог на главной*/
+#catalog{
+    background-color: #f3f4f9;
+}
 #catalog .items{
     font-size: 0;/*Т.к. между элементами div пробелы, которые считаются как 1 символ, то мы делаем размер шрифта этого символа 0, чтобы у нас все элементы влезли*/
     text-align: center; /*выравниваем по центру, даже если будет 5 элементов, то все равно встанут красиво*/
@@ -225,18 +230,8 @@ td{
 vertical-align: top;
 }
 
-h1,footer{
+h1{
     text-align: center;
-}
-
-/*Контакты*/
-/*#contact p{
-color: red;    
-}
-*/
-
-#contact td{
-padding: 15px;
 }
 
 #slogan{
@@ -318,4 +313,40 @@ padding: 15px;
     background-repeat: no-repeat;
     width: 100%;
     height: 320px;
+}
+
+/*Контакты*/
+#contact table{
+    /*border: 1px solid red;*/
+    width: 1000px;
+}
+#contact td{
+    text-align: center;
+    /*padding-top: 2px;*/
+    line-height: 25px;
+}
+
+/*#contact .container {
+    border: 1px solid green;
+}
+*/
+/*#contact td{
+padding: 15px;
+}
+*/
+
+/*#contact p{
+color: red;    
+}
+*/
+
+/*Футер*/
+footer{
+    /*text-align: center;*/
+    background-color: #2f3446;
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
 }

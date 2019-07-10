@@ -1,0 +1,7 @@
+v1.01
++ on page services.html add tags <em> and <strong>
++ fix errors in style.css and mobile.css
+v1.02
++ block contact relocate in footer on all pages except page contact
++ in block contact delete p and align left and line-heigth
++ in footer add background-color and color and text-align
