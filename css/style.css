@@ -264,18 +264,39 @@ h1{
 
 
 /*Верстаем страницу catalog*/
-#catalog-page table {
-    width: 1000px;
-    }
-
-#catalog-page td {
-    border: 1px solid gray;
+/*Верстаем основной контейнер по каждому объекту*/
+#catalog-page .container {
+    border: 3px solid red;
+    margin: auto;
+    /*width: 1000px;*/
+    /*height: 350px;*/
+    text-align: center; /*Выравниваем содержимое этого блока по центру*/
+    font-size: 0;/*Т.к. между элементами div пробелы, которые считаются как 1 символ, то мы делаем размер шрифта этого символа 0, чтобы у нас все элементы влезли*/
 }
 
-#catalog-page tr td:first-child {
-    text-align: center;
-    width: 10px;
+.objects {
+    border: 1px solid grey;
+    display: inline-block; /*располагаем блоки в ряд по горизонтали*/
+    margin-right: -0.25em; /*убираем правый отступ между блоками*/
+    vertical-align: top;
+    font-size: 0.5rem; /*возвращаем размер шрифта*/
+    width: 49%;/*делим 100% на количество элементов в строке*/
+    box-sizing: border-box;
 }
+
+/*Верстаем внутри objects - блок картинка и блок со списком*/
+
+figure{
+    border: 2px solid black;
+    float:left;
+}
+
+.list{
+    border: 2px solid pink;
+    text-align: left;
+    font-size: 1.5em;
+}
+
 
 #catalog-page img{
     height: 300px;
