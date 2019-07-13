@@ -3,17 +3,41 @@
 /* {
   color: #555
 }*/
-h1{
-    font-size: 1.5em;
-    text-shadow: 2px 1px 10px;
-}
-/*h2,h3,h4,h5,h6{
-  color: #333
-}
+
 header{
-  background: #243360
+    float: left;
+     /*border: 5px solid red;*/
+    width: 98%;
+    padding-left: 2%;
+    background-image: url(../img/header-background.jpg);
+    color: white;
+    text-align: center;
 }
-nav a{
+
+main{
+    float: left;
+    /*border: 2px solid green;*/
+    width: 75%;
+    padding-left: 2%;
+    
+}
+
+#sidebar-right{
+    float: left;
+    /*border: 2px solid pink;*/
+    width: 15%;
+    
+}
+
+footer{
+    clear: both;
+    /*border: 2px solid black;*/
+    padding-left: 2%;
+    
+}
+
+
+/*nav a{
   color: #fff;
 }
 .logo{
@@ -31,26 +55,79 @@ nav a{
 .download{
   background: rgb(67, 186, 63);
 }
-
+*/
 /* часть 2*/
 * {
   font-family: Arial, sans-serif;
   /*font-family: 'Lobster', cursive;*/
 }
-.logo{
+
+/*.logo{
   text-decoration: none
 }
-nav a:link   { color: #d65f04 }
-nav a:visited{ color: #f98f37 }
-nav a:active { color: #d6ac04 }
-nav a{
-  text-decoration: none
+*/
+/*Горизонтальное меню*/
+header ul{
+  list-style-type: none;
 }
-nav a:hover{ 
+header li{
+  display: inline-block;
+}
+
+#horizont-menu nav a:link   { color: #d65f04 }
+#horizont-menu nav a:visited{ color: #f98f37 }
+#horizont-menu nav a:active { color: #d6ac04 }
+#horizont-menu nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+#horizont-menu nav a:hover{ 
   color:#d6ac04;
   background: #5a73bc;
-  text-decoration: underline
+  text-decoration: underline;
 }
+
+#horizont-menu nav {
+    text-align: right;
+}
+
+#horizont-menu nav ul{
+    display: inline-block;
+}
+
+/*Вертикальное меню*/
+#sidebar-right ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#sidebar-right li{
+  /*display: inline-block;*/
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+#vertical-menu nav a:link   { color: #d65f04 }
+#vertical-menu nav a:visited{ color: #f98f37 }
+#vertical-menu nav a:active { color: #d6ac04 }
+#vertical-menu nav a{
+    text-decoration: none;
+    padding: 2px 10px;
+}
+#vertical-menu nav a:hover{ 
+  color:#d6ac04;
+  background: #5a73bc;
+  text-decoration: underline;
+}
+
+#vertical-menu nav {
+    text-align: right;
+}
+
+#vertical-menu nav ul{
+    display: inline-block;
+}
+
 
 /*#promotion h3{
   font-weight: 100;
@@ -97,16 +174,6 @@ h1{
   opacity: 1
 }
 
-/*Работа с меню*/
-header ul{
-  list-style-type: none;
-}
-header li{
-  display: inline-block;
-}
-
-
-
 /*border: 1px solid red */
 /*
 #contacts .row:nth-child(4) *{
@@ -133,21 +200,11 @@ header li{
 }
 */
 /* макет */
-nav a{
-    padding: 5px 10px;
-}
+
 
 .container{
     width: 992px;
     margin: auto;
-}
-
-nav {
-    text-align: right;
-}
-
-nav ul{
-    display: inline-block;
 }
 
 header, #banner{
@@ -198,7 +255,7 @@ header, #banner{
     font-weight: bold;
 }
 
-.price {
+.product-price {
     font-size: 14px;
     color: red;
 }
@@ -218,20 +275,17 @@ h2{
     text-align: center;
 }
 
-/*Ссылка все предложения*/
-.objects {
+/*Ссылка все предложения и все услуги*/
+.link-all {
     text-align: center;
-   font-size: 20px;
+    font-size: 20px;
     margin-top: 2px;
-}
-
-td{
- padding: 5px;
-vertical-align: top;
 }
 
 h1{
     text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 1px 10px;
 }
 
 #slogan{
@@ -266,7 +320,6 @@ h1{
 /*Верстаем страницу catalog*/
 /*Верстаем основной контейнер по каждому объекту*/
 #catalog-page .container {
-    border: 3px solid red;
     margin: auto;
     /*width: 1000px;*/
     /*height: 350px;*/
@@ -274,7 +327,7 @@ h1{
     font-size: 0;/*Т.к. между элементами div пробелы, которые считаются как 1 символ, то мы делаем размер шрифта этого символа 0, чтобы у нас все элементы влезли*/
 }
 
-.objects {
+.product {
     border: 1px solid grey;
     display: inline-block; /*располагаем блоки в ряд по горизонтали*/
     margin-right: -0.25em; /*убираем правый отступ между блоками*/
@@ -284,15 +337,13 @@ h1{
     box-sizing: border-box;
 }
 
-/*Верстаем внутри objects - блок картинка и блок со списком*/
+/*Верстаем внутри product - блок картинка и блок со списком*/
 
 figure{
-    border: 2px solid black;
     float:left;
 }
 
 .list{
-    border: 2px solid pink;
     text-align: left;
     font-size: 1.5em;
 }
@@ -304,7 +355,6 @@ figure{
 
 #catalog-page h3{
     font-size: 14px;
-    padding-left: 30px;
 }
 
 /*Страница о нас*/
@@ -329,17 +379,18 @@ figure{
 */
 
 /*Баннер на главной*/
-#banner #banner-box{
+#banner-box{
     background: url(../img/logo-back2.jpg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 98%;
     height: 320px;
+    margin-left: 10px;
 }
 
 /*Контакты*/
 #contact table{
     /*border: 1px solid red;*/
-    width: 1000px;
+    width: 75%;
 }
 #contact td{
     text-align: center;
@@ -363,8 +414,7 @@ color: red;
 
 /*Футер*/
 footer{
-    /*text-align: center;*/
-    background-color: #2f3446;
+    background-color: #081d1e;
     color: white;
     text-align: center;
 }

@@ -14,127 +14,212 @@
 </head>
 <body>
         
-  <header>
+<header>
     <div class="container">
         
         <script src="js/script.js"></script>
-      <nav>
-        <ul>
-            <li><a href="index.html">Главная</a>
-            <li><a href="catalog.html">Каталог</a>
-            <li><a href="service.html">Услуги</a>
-            <li><a href="about.html">О компании</a>
-            <li><a href="contact.html">Контакты</a>
-        </ul>  
-      </nav> 
+        <div id="horizont-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a>
+                    <li><a href="catalog.html">Каталог</a>
+                    <li><a href="service.html">Услуги</a>
+                    <li><a href="about.html">О компании</a>
+                    <li><a href="contact.html">Контакты</a>
+                </ul>  
+            </nav>
+        </div>
     </div>
       <h1>Агентство недвижимости "Формула жилья"</h1>
       <br>
     </header>
-        <div id="catalog-page">
-            <div class='container'>
-                <h2>Объекты</h2>
-                <div class="objects">
+<main>
+                <div id="banner">
+            <div class="container">
+                <div id="banner-box">
+                 <img src='img/logo5.png' alt="Надежно, Профессионально, Честно"/>
+                </div>
+            </div>
+        </div>
+    <div id="catalog-page">
+            <div class="container">
+                <h2 class="product-name">Объекты</h2>
+                <div class="product">
                     <figure>
-                        <img src='img/1_small.jpg' alt="2-комнатная квартира в Москве, улица Яблочкова, 41"/>
+                        <img src="img/1_small.jpg" class="product-img" alt="2-комнатная квартира в Москве, улица Яблочкова, 41"/>
                     </figure>
                     
                     <div class="list">
                         <h3>2-комнатная квартира в Москве, улица Яблочкова, 41</h3>
+                        <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li>Город: Москва</li>
-                            <li>Улица: Яблочкова</li>
-                            <li>Дом: 41</li>
-                            <li>Метро: Петровско-Разумовская</li>
-                            <li>Общая: 40 м2</li>
-                            <li>Жилая: 22,1 м2</li>
-                            <li>Кухня: 7 м2</li>
-                            <li>Этаж/Этажность: 6/12</li>
-                            <li>Тип дома: Блочный</li>
+                            <li><span class="product-address"><a href="#">г. Москва, Улица: Яблочкова, д. 41</a></span></li>
+                            <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
+                            <li><span class="product-rooms">2-х комнатная</span></li>
+                            <li>Общая: <span class="product-square">40 кв.м.</span></li>
+                            <li>Жилая: 22,1 кв.м.</li>
+                            <li>Кухня: 7 кв.м.</li>
+                            <li><span class="product-level">Этаж: 6</span></li>
+                            <li>Тип дома: <span class="product-type-house">Блочный</span></li>
                             <li>Расстояние от метро: 10 мин. пешком</li>
                             <li>Состояние: Евроремонт</li>
                             <li>id: 117</li>
-                            <li>Цена: <span class="price">8 500 000 р.</span></li>
+                            <li>
+                                <div class="offer">Цена: <span class="product-price">8 500 000 </span><span class="product-price-currency">RUB</span>
+                                </div>
+                            </li>
                         </ul>  
                     </div>
                 </div>
                 
-                <div class="objects">
+                <div class="product">
                     <figure>
-                        <img src='img/2_small.jpg' alt="1-комнатная квартира в Балашихе, Акуловский проезд, 4"/>
+                        <img src="img/2_small.jpg" class="product-img" alt="1-комнатная квартира в Балашихе, Акуловский проезд, 4"/>
                     </figure>
                     
                     <div class="list">
-                        <h3>1-комнатная квартира в Балашихе, Акуловский проезд, 4</h3>
+                        <h3 class="product-name">1-комнатная квартира в Балашихе, Акуловский проезд, 4</h3>
+                        <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li>Город: Балашиха</li>
-                            <li>Улица: Акуловский проезд</li>
-                            <li>Дом: 4</li>
-                            <li>Общая: 47 м2</li>
-                            <li>Жилая: 20 м2</li>
-                            <li>Кухня: 12 м2</li>
-                            <li>Этаж/Этажность: 2/24</li>
-                            <li>Тип дома: Монолитный</li>
+                            <li><span class="product-address"><a href="#">г. Балашиха, Акуловский проезд, д.4</a></span></li>
+                            <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
+                            <li><span class="product-rooms">1-комнатная</span></li>
+                            <li>Общая: <span class="product-square">47 кв.м.</span></li>
+                            <li>Жилая: 20 кв.м.</li>
+                            <li>Кухня: 12 кв.м.</li>
+                            <li> <span class="product-level">Этаж: 2</span></li>
+                            <li>Тип дома: <span class="product-type-house">Монолитный</span></li>
                             <li>Состояние: Евроремонт</li>
                             <li>id: 119</li>
-                            <li>Цена: <span class="price">5 500 000 р.</span></li>
+                            <li>
+                                <div class="offer">Цена: <span class="product-price">5 500 000 </span><span class="product-price-currency">RUB</span></div>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="objects">
+                <div class="product">
                     <figure>
-                        <img src='img/2_small.jpg' alt="1-комнатная квартира в Балашихе, Акуловский проезд, 4"/>
+                        <img src="img/3_small.jpg" class="product-img" alt="1-комнатная квартира в Балашихе, Акуловский проезд, 4"/>
                     </figure>
                     
                     <div class="list">
-                        <h3>3-комнатная квартира в Коломне, ул Дзержинского, 17</h3>
+                        <h3 class="product-name">3-комнатная квартира в Коломне, ул Дзержинского, 17</h3>
+                        <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li>Город: Коломна</li>
-                            <li>Улица: Дзержинского</li>
-                            <li>Дом: 17</li>
-                            <li>Общая: 65 м2</li>
-                            <li>Жилая: 45 м2</li>
-                            <li>Кухня: 8 м2</li>
-                            <li>Этаж/Этажность: 1/4</li>
-                            <li>Тип дома: Кирпичный</li>
+                            <li><span class="product-address"><a href="#">г. Коломна, ул Дзержинского, д. 17</a></span></li>
+                            <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
+                            <li><span class="product-rooms">3-х комнатная</span></li>
+                            <li>Общая: <span class="product-square">65 кв.м.</span></li>
+                            <li>Жилая: 45 кв.м.</li>
+                            <li>Кухня: 8 кв.м.</li>
+                            <li> <span class="product-level">Этаж:1</span></li>
+                            <li>Тип дома: <span class="product-type-house">Кирпичный</span></li>
                             <li>Состояние: Среднее</li>
                             <li>id: 119</li>
-                            <li>Цена: <span class="price">5 700 000 р.</span></li>
+                            <li>
+                                <div class="offer">Цена: <span class="product-price">5 700 000 </span><span class="product-price-currency">RUB</span></div>
+                            </li>
                         </ul>   
                     </div>
                 </div>
                 
-                <div class="objects">
+                <div class="product">
                     <figure>
-                        <img src='img/3_small.jpg' alt="4-комнатная квартира в Москве, Ярославское шоссе, 2"/>
+                        <img src="img/4_small.jpg" class="product-img" alt="4-комнатная квартира в Москве, Ярославское шоссе, 2"/>
                     </figure>
                     
                     <div class="list">
-                        <h3>4-комнатная квартира в Москве, Ярославское шоссе, 2</h3>
+                        <h3 class="product-name">4-комнатная квартира в Москве, Ярославское шоссе, 2, к.1</h3>
+                        <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li>Город: Москва</li>
-                            <li>Улица: Ярославское шоссе</li>
-                            <li>Дом: 2</li>
-                            <li>Корпус: 1</li>
-                            <li>Метро: Свиблово</li>
-                            <li>Общая: 100 м2</li>
-                            <li>Жилая: 61 м2</li>
-                            <li>Кухня: 10 м2</li>
-                            <li>Этаж/Этажность: 19/22</li>
-                            <li>Тип дома: Панельный</li>
+                            <li><span class="product-address"><a href="#">г. Москва, Ярославское шоссе, д. 2, к.1</a></span></li>
+                            <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
+                            <li><span class="product-rooms">4-х комнатная</span></li>
+                            <li>Общая: <span class="product-square">100 кв.м.</span></li>
+                            <li>Жилая: 61 кв.м.</li>
+                            <li>Кухня: 10 кв.м.</li>
+                            <li> <span class="product-level">Этаж: 19</span></li>
+                            <li>Тип дома: <span class="product-type-house">Панельный</span></li>
                             <li>Расстояние от метро: 5-15 мин. транспортом</li>
                             <li>Состояние: Евроремонт</li>
                             <li>id: 120</li>
-                            <li>Цена: <span class="price">16 000 000 р.</span></li>
+                            <li>
+                                <div class="offer">Цена: <span class="product-price">16 000 000 </span><span class="product-price-currency">RUB</span></div>
+                            </li>
                         </ul> 
                     </div>
                 </div>        
             </div>
         </div>
-    <footer>
+</main>
+    
+<div id="sidebar-right">
+        <div class="container">
+
+            <script src="js/script.js"></script>
+            <div id="vertical-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li><a href="catalog.html">Каталог</a>
+                        <li><a href="service.html">Услуги</a>
+                        <li><a href="about.html">О компании</a>
+                        <li><a href="contact.html">Контакты</a>
+                    </ul>  
+                </nav>
+            </div>
+            
+                        <form>
+                
+                <div class="row">
+                    <label>Общая площадь</label>
+                    <input type="search" name="name" />
+                </div>
+                
+                <div class="row">
+                    <label>Цена от</label>
+                    <input type="text" name="min-price" />
+                    <label>Цена до</label>
+                    <input type="text" name="max-price" />
+                </div>
+                
+                <div class="row">
+                    <label>Студия</label>
+                    <input type="checkbox" name="rooms" value="0"/><br>
+                    <label>Однокомнатная</label>
+                    <input type="checkbox" name="rooms" value="1"/><br>
+                    <label>Двухкомнатная</label>
+                    <input type="checkbox" name="rooms" value="2"/><br>
+                    <label>Трехкомнатная</label>
+                    <input type="checkbox" name="rooms" value="3"/><br>
+                    <label>Четырехкомнатная</label>
+                    <input type="checkbox" name="rooms" value="4"/>
+                </div>
+                
+                <div class="row">
+                    <label for="compass">Направление</label>
+                    <select name="compass" multiple size="4">
+                        <option>Восток</option>
+                        <option>Север</option>
+                        <option>Запад</option>
+                        <option>Юг</option>
+                    </select>
+
+                </div>
+                
+
+                
+                <div class="row">
+                    <input type="submit" name="Отправить" />
+                </div>
+            </form>
+        </div>
+    </div>
+    
+<footer>
           <div id="contact">
-             <div class='container'>
+             <div class="container">
             <h2>Контакты</h2>
                 <table>
                     <tr>
@@ -145,8 +230,8 @@
                                 109428, г. Москва, Нарвская ул, д. 1<br>
                                 Координаты для GPS-навигатора: 55.831706, 37.506828<br>
                                 Ближайшая станция метро: Водный стадион<br>
-                                Телефон: <a href='tel:+7(495)150-77-66'>+7(495)150-77-66</a><br>
-                                Электронная почта: <a href='mailto:info@formula-house.ru'>info@formula-house.ru</a>
+                                Телефон: <a href="tel:+7(495)150-77-66">+7(495)150-77-66</a><br>
+                                Электронная почта: <a href="mailto:info@formula-house.ru">info@formula-house.ru</a>
                             </address>
                         </td>
                         <td>
@@ -159,12 +244,12 @@
                     </tr>
             
                 </table>
-            <div class="objects"><a href="contact.html">Как проехать</a></div>
+            <div class="link-all"><a href="contact.html">Как проехать</a></div>
       
       </div>
       </div>      
-  <div class='container'>
-      <p class='copyright'>© Агентство недвижимости "Формула жилья". Соблюдайте авторские права.
+  <div class="container">
+      <p class="copyright">© Агентство недвижимости "Формула жилья". Соблюдайте авторские права.
   </div>
 </footer>  
 
