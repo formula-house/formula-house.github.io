@@ -148,7 +148,7 @@ h1{
 /* часть 3 */
 /*#banner{
   /*background-image: url(../img/background.jpg);*/
-}
+/*}
 
 /*#reviews,#banner{
   background-color: #243360;
@@ -171,7 +171,7 @@ h1{
 }
 #reviews img:hover{
   /*width: 200px;*/
-  opacity: 1
+  /*opacity: 1
 }
 
 /*border: 1px solid red */
@@ -201,8 +201,7 @@ h1{
 */
 /* макет */
 
-
-.container{
+.container {
     width: 992px;
     margin: auto;
 }
