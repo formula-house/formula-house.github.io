@@ -33,6 +33,25 @@
       <h1>Агентство недвижимости "Формула жилья"</h1>
       <br>
     </header>
+    
+<div id="sidebar-left">
+        <div class="container">
+
+            <script src="js/script.js"></script>
+            <div id="vertical-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li><a href="catalog.html">Каталог</a>
+                        <li><a href="service.html">Услуги</a>
+                        <li><a href="about.html">О компании</a>
+                        <li><a href="contact.html">Контакты</a>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+    </div>      
+    
 <main>
         <div id="banner">
             <div class="container">
@@ -156,62 +175,73 @@
     
 <div id="sidebar-right">
         <div class="container">
+        
+            <form>
+                <div id="form-all"> <!--Оборачиваем в контейнер всю форму, чтобы потом прописать прижатие полей к подписям-->
+                    <div class="field">
+                        <label>Общая площадь
+                            <input type="search" name="name" size="3"/>
+                        </label>
+                    </div>
 
-            <script src="js/script.js"></script>
-            <div id="vertical-menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Главная</a>
-                        <li><a href="catalog.html">Каталог</a>
-                        <li><a href="service.html">Услуги</a>
-                        <li><a href="about.html">О компании</a>
-                        <li><a href="contact.html">Контакты</a>
-                    </ul>  
-                </nav>
-            </div>
-            
-                        <form>
-                
-                <div class="row">
-                    <label>Общая площадь</label>
-                    <input type="search" name="name" />
-                </div>
-                
-                <div class="row">
-                    <label>Цена от</label>
-                    <input type="text" name="min-price" />
-                    <label>Цена до</label>
-                    <input type="text" name="max-price" />
-                </div>
-                
-                <div class="row">
-                    <label>Студия</label>
-                    <input type="checkbox" name="rooms" value="0"/><br>
-                    <label>Однокомнатная</label>
-                    <input type="checkbox" name="rooms" value="1"/><br>
-                    <label>Двухкомнатная</label>
-                    <input type="checkbox" name="rooms" value="2"/><br>
-                    <label>Трехкомнатная</label>
-                    <input type="checkbox" name="rooms" value="3"/><br>
-                    <label>Четырехкомнатная</label>
-                    <input type="checkbox" name="rooms" value="4"/>
-                </div>
-                
-                <div class="row">
-                    <label>Направление</label>
-                    <select name="compass" multiple size="4">
-                        <option>Восток</option>
-                        <option>Север</option>
-                        <option>Запад</option>
-                        <option>Юг</option>
-                    </select>
+                    <div class="field">
+                        <label>Цена от
+                            <input type="text" name="min-price"/>
+                        </label>
+                    </div>
 
-                </div>
-                
+                    <div class="field">
+                        <label>Цена до
+                            <input type="text" name="max-price"/>
+                        </label>
+                    </div>
 
-                
-                <div class="row">
-                    <input type="submit" name="Отправить" />
+                    <div class="field">
+                        <label>Студия
+                            <input type="checkbox" name="rooms" value="0"/>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>Однокомнатная
+                            <input type="checkbox" name="rooms" value="1"/>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>Двухкомнатная
+                            <input type="checkbox" name="rooms" value="2"/>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>Трехкомнатная
+                            <input type="checkbox" name="rooms" value="3"/>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>Четырехкомнатная
+                            <input type="checkbox" name="rooms" value="4"/>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>Направление
+                            <select name="compass" multiple size="4">
+                                <option>Восток</option>
+                                <option>Север</option>
+                                <option>Запад</option>
+                                <option>Юг</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label>
+                            <input type="submit" name="Отправить" />
+                        </label>
+                    </div>
                 </div>
             </form>
         </div>

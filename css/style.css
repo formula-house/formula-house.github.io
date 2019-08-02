@@ -4,6 +4,13 @@
   color: #555
 }*/
 
+/* Чистим все отступы - пока рано, не готово еще, в конце почищу, как все сделаю
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
 header{
     float: left;
      /*border: 5px solid red;*/
@@ -14,18 +21,25 @@ header{
     text-align: center;
 }
 
+#sidebar-left{
+    padding-top: 10px;
+    float: left;
+    /*border: 2px solid pink;*/
+    width: 7%;
+}
+
 main{
     float: left;
     /*border: 2px solid green;*/
-    width: 75%;
-    padding-left: 2%;
+    width: 74%;
+    padding-left: 1%;
     
 }
 
 #sidebar-right{
     float: left;
     /*border: 2px solid pink;*/
-    width: 15%;
+    width: 7%;
     
 }
 
@@ -96,16 +110,16 @@ header li{
 }
 
 /*Вертикальное меню*/
-#sidebar-right ul{
+#sidebar-left ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
-#sidebar-right li{
+#sidebar-left li{
   /*display: inline-block;*/
     text-align: left;
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
 }
 #vertical-menu nav a:link   { color: #d65f04 }
 #vertical-menu nav a:visited{ color: #f98f37 }
@@ -125,7 +139,7 @@ header li{
 }
 
 #vertical-menu nav ul{
-    display: inline-block;
+    /*idsplay: inline-block;*/
 }
 
 
@@ -303,6 +317,23 @@ h1{
     color: blue;
     font-size: 16px;
     font-weight: bold;
+}
+
+/*Форма на странице каталог*/
+
+.field{
+    clear:both;/* Назначаем каждому диву обновление потока*/
+    text-align:right; /*Выровняем содержимое каждого дива по правому краю*/
+    line-height: 30px; /*Здесь задаем вертикальный отступ между строчками в форме*/
+}
+
+label {
+    float:left;/*Задаем прижатие влево для всей подписей*/
+    padding-right: 0px; /*Это отступ поля от подписи, т.е. отступ у подписи справа*/
+}
+
+#form-all {
+    float:left; /*Чтобы поля прижались к подписям*/
 }
 
 /*Ячейки таблицы с картинкой
