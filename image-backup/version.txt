@@ -1,0 +1,98 @@
+v1.01
+	+ on page services.html add tags <em> and <strong>
+	+ fix errors in style.css and mobile.css
+v1.02
+	+ block contact relocate in footer on all pages except page contact
+	+ in block contact delete p and align left and line-heigth
+	+ in footer add background-color and color and text-align
+v1.03
+	+ check all pages all block have class container
+	+ check on page index block catalog - only block design, no table + yes
+	+ on page catalog:
+		+ objects сhange design with table on block
+		+ list text-align: left
+		+ font-size: 1.5em
+v1.04
+	+ rename link with index.html - objects->link-all
+	+ fix link-all style 
+	+ fix link on page contact in footer on all pages - rename on link-all
+	+ all pages design on block and all pages have header, nav, main, footer, .sidebar-right
+		index
+		about
+		catalog
+		contact
+		Service
+v1.05
+	+ add div for horizont-menu on all pages
+	+ add vertical menu in sidebar-right on all pages
+v1.06
+	+ on page catalog for all objects add class:
+		offer
+		product - rename .objects
+		product-name - h2
+		.product-desc - описание квартиры, 
+		.product-img - изображение квартиры
+		product-price - стоимость квартиры - rename
+		product-price-currency - валюта
+		product-type-house -  тип дома
+		product-level - этаж
+		product-address - адрес
+		product-map - показать на карте
+		product-rooms - количество комнат
+		product-square - метраж
+	+ in .sidebar-right add search form однострочное поле «Общая площадь», два однострочных поля для ценового диапазона (от и до), набор из 5 флажков с указанием сколько комнат нужно (студия, одно-, двух-, трёх- и четырёхкомнатная), поле выбора select («Восток», «Север», «Запад», «Юг»)
+v.1.07
+	+ color design - https://www.templatemonster.com/ru/website-templates-type/42556.html
+	+ fix all pages except index - no image in top pages
+v1.08
+	+ add .sidebar.left on index and add padding-top in sidebar-left and sidebar-left li
+	+ add .sidebar.left on all pages
+	+ delete sidebar.right with all pages except service
+	+ vertical menu move in .sidebar-left
+v1.09
+	+ label bind input in form on page catalog
+	+ on page catalog in form delete br and form field align
+	+ on page catalog fix empty place in right
+v1.10
+	+ on page service  add em and strong in p
+v1.11
+	+ on page catalog image size 220x160
+	+ on page index image size 300x400
+v1.12
+	+ container width 1024
+	+ all pages * {margin: 0; padding: 0; }
+	+ change footer on all pages - add br and padding and margin
+	+ fix index page price - need font color red and size
+	+ fix #catalog .item height
+	+ fix page about about-box padding and margin and dix block workers
+v1.13
+	+ fix item on index page
+	+ fix h3 size
+	+ add margin to p and h3 in services
+	+ rename button on page catalog
+	+ on all pages add margin-top to banner-box: 18px;
+	+ change size banner-box  and width .container on page catalog
+v1.14
+	+ add padding items on page catalog
+	+ add and delete house number in address on page index and catalog
+v1.15
+	+ add footer menu horizont and vertical
+v1.16
+	+ add google font for h1 on index
+v1.17
+	+ add carousel
+v1.18
+	+ test html and css validation
+		+ index
+		+ about
+		+ catalog
+		+ contact
+		+ service
+		+ css
+		+ change all pages id footer-menu-vertical on class footer-menu-vertical
+v1.19
+	+ add google font for h1 on all page
+	+ fix on page catalog form field width - size and banner-box width and margin-bottom
+	+ carusel -  .slide width: and  margin-left
+v1.20
+	+ upload v1.20 on github
