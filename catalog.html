@@ -4,6 +4,8 @@
     <title>Агентство недвижимости "Формула жилья"</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css">
+         <!-- Подключаем внешний шрифт-->   
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
         <!-- Подключаем внешний стиль для мобильного-->
     <link 
           media="screen and (max-width: 768px)" 
@@ -55,7 +57,7 @@
 <main>
         <div id="banner">
             <div class="container">
-                <div id="banner-box">
+                <div id="banner-box-catalog">
                  <img src='img/logo5.png' alt="Надежно, Профессионально, Честно"/>
                 </div>
             </div>
@@ -69,10 +71,10 @@
                     </figure>
                     
                     <div class="list">
-                        <h3>2-комнатная квартира в Москве, улица Яблочкова, 41</h3>
+                        <h3>2-комнатная квартира в Москве, улица Яблочкова, 41, к.1</h3>
                         <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li><span class="product-address"><a href="#">г. Москва, Улица: Яблочкова, д. 41</a></span></li>
+                            <li><span class="product-address"><a href="#">г. Москва, Улица: Яблочкова, 41, к.1</a></span></li>
                             <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
                             <li><span class="product-rooms">2-х комнатная</span></li>
                             <li>Общая: <span class="product-square">40 кв.м.</span></li>
@@ -100,14 +102,15 @@
                         <h3 class="product-name">1-комнатная квартира в Балашихе, Акуловский проезд, 4</h3>
                         <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li><span class="product-address"><a href="#">г. Балашиха, Акуловский проезд, д.4</a></span></li>
+                            <li><span class="product-address"><a href="#">г. Балашиха, Акуловский проезд, 4</a></span></li>
                             <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
                             <li><span class="product-rooms">1-комнатная</span></li>
                             <li>Общая: <span class="product-square">47 кв.м.</span></li>
                             <li>Жилая: 20 кв.м.</li>
                             <li>Кухня: 12 кв.м.</li>
-                            <li> <span class="product-level">Этаж: 2</span></li>
+                            <li><span class="product-level">Этаж: 2</span></li>
                             <li>Тип дома: <span class="product-type-house">Монолитный</span></li>
+                            <li>Расстояние от метро: 7 мин. пешком</li>
                             <li>Состояние: Евроремонт</li>
                             <li>id: 119</li>
                             <li>
@@ -123,10 +126,10 @@
                     </figure>
                     
                     <div class="list">
-                        <h3 class="product-name">3-комнатная квартира в Коломне, ул Дзержинского, 17</h3>
+                        <h3 class="product-name">3-комнатная квартира в Коломне, ул Дзержинского, 17, стр. 2</h3>
                         <span class="product-desc">Описание квартиры</span>
                         <ul>
-                            <li><span class="product-address"><a href="#">г. Коломна, ул Дзержинского, д. 17</a></span></li>
+                            <li><span class="product-address"><a href="#">г. Коломна, ул Дзержинского, д. 17, стр. 2</a></span></li>
                             <li><span class="product-map"><a href="#">Показать на карте</a></span></li>
                             <li><span class="product-rooms">3-х комнатная</span></li>
                             <li>Общая: <span class="product-square">65 кв.м.</span></li>
@@ -134,6 +137,7 @@
                             <li>Кухня: 8 кв.м.</li>
                             <li> <span class="product-level">Этаж:1</span></li>
                             <li>Тип дома: <span class="product-type-house">Кирпичный</span></li>
+                            <li>Расстояние от метро: 30 мин. транспортом</li>
                             <li>Состояние: Среднее</li>
                             <li>id: 119</li>
                             <li>
@@ -180,19 +184,19 @@
                 <div id="form-all"> <!--Оборачиваем в контейнер всю форму, чтобы потом прописать прижатие полей к подписям-->
                     <div class="field">
                         <label>Общая площадь
-                            <input type="search" name="name" size="3"/>
+                            <input type="search" name="name" size="4"/>
                         </label>
                     </div>
 
                     <div class="field">
                         <label>Цена от
-                            <input type="text" name="min-price"/>
+                            <input type="text" name="min-price" size="13"/>
                         </label>
                     </div>
 
                     <div class="field">
                         <label>Цена до
-                            <input type="text" name="max-price"/>
+                            <input type="text" name="max-price" size="13"/>
                         </label>
                     </div>
 
@@ -239,7 +243,7 @@
 
                     <div class="field">
                         <label>
-                            <input type="submit" name="Отправить" />
+                            <input type="submit" name="search" value="Поиск"/>
                         </label>
                     </div>
                 </div>
@@ -248,7 +252,49 @@
     </div>
     
 <footer>
-          <div id="contact">
+    <div id="footer-menu-horizont">
+            <nav>
+               <ul>
+                    <li><a href="#">Наше агентство</a>
+                        <div class="footer-menu-vertical">
+                            <nav>
+                                <ul> 
+                                    <li><a href="#">Информация об агентстве</a></li>
+                                    <li><a href="#">Наши партнеры</a></li>
+                                    <li><a href="#">Отзывы клиентов</a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+
+                    <li><a href="#">Специальные предложения</a>
+                        <div class="footer-menu-vertical">
+                            <nav>
+                                <ul> 
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Эксклюзивные объекты</a></li>
+                                    <li><a href="#">Дома под реновацию</a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+
+                    <li><a href="#">Постоянным клиентам</a>
+                        <div class="footer-menu-vertical">
+                            <nav>
+                                <ul>  
+                                    <li><a href="#">Скидочные карты</a></li>
+                                    <li><a href="#">Бесплатные консультации</a></li>
+                                    <li><a href="#">Выезд на дом</a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <hr>
+    <div id="contact">
              <div class="container">
             <h2>Контакты</h2>
                 <table>
@@ -265,9 +311,9 @@
                             </address>
                         </td>
                         <td>
-                            <span class="bold">График работы</span><br>
+                            <span class="bold">График работы</span><br><br>
                                 <p>Пн.-Пт. с 10:00 до 20:00</p>
-                                <p>Cб. с 11:00 до 17:00</p>
+                                <p>Cб. с 11:00 до 17:00</p><br>
                                 <p>Вс. Выходной день</p>
 
                         </td>
@@ -277,11 +323,13 @@
             <div class="link-all"><a href="contact.html">Как проехать</a></div>
       
       </div>
-      </div>      
-  <div class="container">
+      </div>
+        
+
+    <div class="container">
       <p class="copyright">© Агентство недвижимости "Формула жилья". Соблюдайте авторские права.
-  </div>
-</footer>  
+    </div>
+</footer>
 
 </body>
 </html>

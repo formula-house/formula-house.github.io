@@ -53,10 +53,49 @@ v1.09
 	+ label bind input in form on page catalog
 	+ on page catalog in form delete br and form field align
 	+ on page catalog fix empty place in right
-V1.10
+v1.10
 	+ on page service  add em and strong in p
-
-fixing:
-- form field align not good
-- change design contact in footer on block
-- delete header-background image big
+v1.11
+	+ on page catalog image size 220x160
+	+ on page index image size 300x400
+v1.12
+	+ container width 1024
+	+ all pages * {margin: 0; padding: 0; }
+	+ change footer on all pages - add br and padding and margin
+	+ fix index page price - need font color red and size
+	+ fix #catalog .item height
+	+ fix page about about-box padding and margin and dix block workers
+v1.13
+	+ fix item on index page
+	+ fix h3 size
+	+ add margin to p and h3 in services
+	+ rename button on page catalog
+	+ on all pages add margin-top to banner-box: 18px;
+	+ change size banner-box  and width .container on page catalog
+v1.14
+	+ add padding items on page catalog
+	+ add and delete house number in address on page index and catalog
+v1.15
+	+ add footer menu horizont and vertical
+v1.16
+	+ add google font for h1 on index
+v1.17
+	+ add carousel
+v1.18
+	+ test html and css validation
+		+ index
+		+ about
+		+ catalog
+		+ contact
+		+ service
+		+ css
+		+ change all pages id footer-menu-vertical on class footer-menu-vertical
+v1.19
+	+ add google font for h1 on all page
+	+ fix on page catalog form field width - size and banner-box width and margin-bottom
+	+ carusel -  .slide width: and  margin-left
+v1.20
+	+ fix link-all underline
+	+ upload v1.20 on github
+	
+	Fix on index page font-size small, but other pager font size good
